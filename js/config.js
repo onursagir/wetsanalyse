@@ -5,8 +5,8 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc0",
-  specStatus: "WV",
-  specType: "HR",
+  specStatus: "def",
+  specType: "PR",
   pubDomain: "ronl",
 
   // shortName = Repository name
@@ -22,17 +22,17 @@ let respecConfig = {
 
 
   // Content
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
+  content: {"ch01": "informative", "ch02": ""},
   editors: [{
-    name: "Mildo van Staden",
-    mailto: "Mildo.Staden@minbzk.nl",
-    company: "BZK",
-    companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
-  }, {
     name: "Mariette Lokin",
     mailto: "mariette@hooghiemstra-en-partners.nl",
     company: "Hooghiemstra & Partners",
     companyURL: "https://hooghiemstra-en-partners.nl",
+  }, {
+    name: "Frank Harmsen",
+    mailto: "frank.harmsen@pna-group.com",
+    company: "PNA",
+    companyURL: "http://www.pna-group.com",
   }],
   authors:
     [
