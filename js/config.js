@@ -12,7 +12,7 @@ let respecConfig = {
   // shortName = Repository name
   shortName: "wetsanalyse",
   publishDate: "2023-11-30",
-  publishVersion: "0.0.1",
+  publishVersion: "1.0.0",
   
   previousPublishVersion: "",
   previousPublishDate: "",
