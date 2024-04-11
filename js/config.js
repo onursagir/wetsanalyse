@@ -5,14 +5,14 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc0",
-  specStatus: "def",
-  specType: "PR",
+  specStatus: "WV",
+  specType: "IM",
   pubDomain: "ronl",
 
   // shortName = Repository name
   shortName: "wetsanalyse",
-  publishDate: "2023-11-30",
-  publishVersion: "1.0.0",
+  publishDate: "2024-04-11",
+  publishVersion: "0.9.0",
   
   previousPublishVersion: "",
   previousPublishDate: "",
