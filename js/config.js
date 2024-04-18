@@ -46,6 +46,13 @@ let respecConfig = {
   ],
   github: "https://github.com/MinBZK/wetsanalyse/",
 
+  // References & footnotes
+  localBiblio: {
+    HOHFELD: {
+      title: "Some Fundamental Conceptions as Applied in Judicial Reasoning",
+      publisher: "Yale Law Journal (23) 1913, afl. 1, p. 16-59",
+      },
+  },
 
   // Create PDF and link to file in header (optional):
   alternateFormats: [
