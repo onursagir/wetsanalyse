@@ -3,19 +3,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 34.1.4">
 <style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
-<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -121,7 +108,20 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Deze Wetsanalyse specificatie beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.">
+<style>
+.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;background:#fafafa}
+.hljs-comment,.hljs-quote{color:#717277;font-style:italic}
+.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4}
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;font-weight:700}
+.hljs-literal{color:#0b76c5}
+.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c}
+.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01}
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801}
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}
+.hljs-link{text-decoration:underline}
+</style>
 <style>
 
   .sidelabel {
@@ -280,6 +280,15 @@ ul.index code{color:inherit}
       "href": "https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef",
       "publisher": "Harrie van Houtum (Business KnowHow Services) et al",
       "id": "blkamer"
+    },
+    "NLSBB": {
+      "href": "https://docs.geostandaarden.nl/nl-sbb/nl-sbb/",
+      "title": "NL-SBB - Standaard voor het beschrijven van begrippen",
+      "authors": [
+        "Geonovum Standaard - versie ter vaststelling."
+      ],
+      "date": "16 april 2024",
+      "id": "nlsbb"
     }
   },
   "specStatus": "DEF",
@@ -294,8 +303,9 @@ ul.index code{color:inherit}
   "title": "Wetsanalyse",
   "subtitle": "Voor een werkbare uitvoering van wetgeving met ICT",
   "content": {
-    "Inleiding": "informative",
-    "JAS": ""
+    "H1-Inleiding": "informative",
+    "H2-JAS": "",
+    "H3-Kader": ""
   },
   "editors": [
     {
@@ -384,13 +394,16 @@ ul.index code{color:inherit}
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2>
-<p>Deze <strong>Wetsanalyse specificatie</strong> beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Boek</span></div><p class="">
-Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het boek Wetsanalyse, Voor een werkbare uitvoering van wetgeving met ICT, van de auteur(s): Anouschka Ausems, John Bulles en Mariette Lokin.<br>
-<br>
-<a href="https://www.boomdenhaag.nl/webshop/wetsanalyse">Dit boek</a> wordt uitgeven door Boom uitgevers Den Haag.
-</p></div></section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#jas"><bdi class="secno">2. </bdi>JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#juridisch-analyschema"><bdi class="secno">2.1 </bdi>Juridisch Analyschema</a></li><li class="tocline"><a class="tocxref" href="#elementen-uit-het-jas"><bdi class="secno">2.2 </bdi>Elementen uit het JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rechtssubject"><bdi class="secno">2.2.1 </bdi>Rechtssubject</a></li><li class="tocline"><a class="tocxref" href="#rechtsobject"><bdi class="secno">2.2.2 </bdi>Rechtsobject</a></li><li class="tocline"><a class="tocxref" href="#rechtsbetrekking"><bdi class="secno">2.2.3 </bdi>Rechtsbetrekking</a></li><li class="tocline"><a class="tocxref" href="#rechtsfeit"><bdi class="secno">2.2.4 </bdi>Rechtsfeit</a></li><li class="tocline"><a class="tocxref" href="#voorwaarde"><bdi class="secno">2.2.5 </bdi>Voorwaarde</a></li><li class="tocline"><a class="tocxref" href="#etc"><bdi class="secno">2.2.6 </bdi>Etc...</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">4. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+
+
+<meta charset="utf-8">
+<title>Error</title>
+
+
+<pre aria-busy="false"><code class="hljs">Cannot GET /abstract.md</code></pre>
+
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#jas"><bdi class="secno">2. </bdi>JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#juridisch-analyschema"><bdi class="secno">2.1 </bdi>Juridisch Analyschema</a></li><li class="tocline"><a class="tocxref" href="#elementen-uit-het-jas"><bdi class="secno">2.2 </bdi>Elementen uit het JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rechtssubject"><bdi class="secno">2.2.1 </bdi>Rechtssubject</a></li><li class="tocline"><a class="tocxref" href="#rechtsobject"><bdi class="secno">2.2.2 </bdi>Rechtsobject</a></li><li class="tocline"><a class="tocxref" href="#rechtsbetrekking"><bdi class="secno">2.2.3 </bdi>Rechtsbetrekking</a></li><li class="tocline"><a class="tocxref" href="#rechtsfeit"><bdi class="secno">2.2.4 </bdi>Rechtsfeit</a></li><li class="tocline"><a class="tocxref" href="#voorwaarde"><bdi class="secno">2.2.5 </bdi>Voorwaarde</a></li><li class="tocline"><a class="tocxref" href="#etc"><bdi class="secno">2.2.6 </bdi>Etc...</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">3.1 </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">3.2 </bdi>Taxonomie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Een goede vertaling van wetgeving naar de uitvoeringspraktijk vraagt om een aanpak waarbij alle stappen voor het interpreteren, preciseren en nader invullen van wetgeving expliciet en op een gestructureerde manier worden vastgelegd. Dat zorgt ervoor dat de keuzes die worden gemaakt bij het vertalen van wetgeving naar uitvoering helder zijn en dat besluiten die op grond van die keuzes worden gemaakt, uit te leggen en te verantwoorden zijn. Een ander voordeel van zo’n aanpak is dat bij wijziging van de wetgeving gemakkelijker te bepalen is welke aanpassingen nodig zijn in de ICT-systemen. Dat maakt uitvoeringsorganisaties wendbaarder bij de implementatie van wetgeving.</p>
 <p>Wetsanalyse is een aanpak die dit ondersteunt; de beschrijving en toepassing ervan staan in dit boek centraal. Het boek bestaat uit twee delen. Het eerste deel behandelt de theorie van Wetsanalyse. Om de context te schetsen wordt in hoofdstuk 2 ingegaan op de karakteristieken van wetgeving die maken dat (het inrichten van) de uitvoering vaak bewerkelijk is. Vervolgens worden in hoofdstuk 3 de verschillende stappen in de aanpak van Wetsanalyse beschreven.</p>
 <p>Hoofdstuk 4 behandelt het juridisch analyseschema dat hét onderwerp is van deze specificatie en dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
@@ -529,7 +542,7 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
 </tr>
 <tr>
 <td><strong>Omschrijving klass</strong></td>
-<td>EEen voorwaarde is een conditie die beschrijft aan welke omstandigheid voldaan moet zijn voor het intreden van een rechtsgevolg. Een voor waarde kan ook betrekking hebben op een rechts subject of op een waarde die bij een rechtsobject of bij een afleidingsregel hoort. Een voorwaarde bevat vaste elementen, die in de logica operanden en operatoren worden genoemd. Operanden kunnen rechts subjecten of rechtsobjecten, eigenschappen van rechts subjecten of rechtsobjecten, berekeningen of waarden zijn. Een operator is de beschrijving van een vergelijking die in de voorwaarde voorkomt, zoals ‘groter dan’, ‘kleiner dan’ en ‘gelijk aan’.</td>
+<td>Een voorwaarde is een conditie die beschrijft aan welke omstandigheid voldaan moet zijn voor het intreden van een rechtsgevolg. Een voor waarde kan ook betrekking hebben op een rechts subject of op een waarde die bij een rechtsobject of bij een afleidingsregel hoort. Een voorwaarde bevat vaste elementen, die in de logica operanden en operatoren worden genoemd. Operanden kunnen rechts subjecten of rechtsobjecten, eigenschappen van rechts subjecten of rechtsobjecten, berekeningen of waarden zijn. Een operator is de beschrijving van een vergelijking die in de voorwaarde voorkomt, zoals ‘groter dan’, ‘kleiner dan’ en ‘gelijk aan’.</td>
 </tr>
 <tr>
 <td><strong>vraag</strong></td>
@@ -541,7 +554,21 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
 </tr>
 </tbody></table>
 </section><section id="etc"><div class="header-wrapper"><h4 id="x2-2-6-etc"><bdi class="secno">2.2.6 </bdi>Etc...</h4><a class="self-link" href="#etc" aria-label="Permalink for Section 2.2.6"></a></div>
-</section></section></section>
+</section></section></section><section id="begrippenkader"><div class="header-wrapper"><h2 id="x3-begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</h2><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 3."></a></div>
+<section id="begrippenlijst"><div class="header-wrapper"><h3 id="x3-1-begrippenlijst"><bdi class="secno">3.1 </bdi>Begrippenlijst</h3><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 3.1"></a></div>
+<p>In bijlage A worden alle in deze standaard gedefinieerde begrippen gerepresenteerd in een alfabetische begrippenlijst in de vorm van een index.</p>
+</section><section id="taxonomie"><div class="header-wrapper"><h3 id="x3-2-taxonomie"><bdi class="secno">3.2 </bdi>Taxonomie</h3><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 3.2"></a></div>
+<p>Het is ook mogelijk een taxonomie van deze begrippen te maken. In <cite><a data-matched-text="[[[NLSBB]]]" href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/">NL-SBB - Standaard voor het beschrijven van begrippen</a></cite> is beschreven dat we het hebben over begrippen en een begrippenkader. Deze kunnen dus worden gezien als topbegrippen in het begrippenkader van deze standaard. Ook wordt aangegeven dat de bron belangrijk is en dat collecties (van begrippen) handig kunnen zijn. 
+De topbegrippen zijn dan: </p>
+<ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtssubject" class="internalDFN" id="ref-for-dfn-rechtssubject-1">rechtssubject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsobject" class="internalDFN" id="ref-for-dfn-rechtsobject-1">rechtsobject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsbetrekking" class="internalDFN" id="ref-for-dfn-rechtsbetrekking-1">rechtsbetrekking</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsfeit" class="internalDFN" id="ref-for-dfn-rechtsfeit-1">rechtsfeit</a></li>
+</ul>
+<p>Dezen kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit:</p>
+<p>To do.</p>
+</section></section>
   <script>
     let content = "";
 
@@ -555,8 +582,8 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
 
     document.getElementById("sotd").insertAdjacentHTML('afterend', content);
   </script>
-  <section id="conformance"><div class="header-wrapper"><h2 id="x3-conformiteit"><bdi class="secno">3. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 3."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"><div class="header-wrapper"><h2 id="x4-lijst-met-figuren"><bdi class="secno">4. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 4."></a></div><ul class="tof">
+  <section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"><div class="header-wrapper"><h2 id="x5-lijst-met-figuren"><bdi class="secno">5. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 5."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#fig-juridisch-analyseschema"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Juridisch Analyseschema</span></a>
   </li><li class="tofline">
@@ -587,8 +614,13 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="informatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-informatieve-referenties"><bdi class="secno">B.1 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
+    <dl class="bibliography"><dt id="bib-nlsbb">[NLSBB]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/"><cite>NL-SBB - Standaard voor het beschrijven van begrippen</cite></a>. Geonovum Standaard - versie ter vaststelling.. 16 april 2024. URL: <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/">https://docs.geostandaarden.nl/nl-sbb/nl-sbb/</a>
+    </dd></dl>
+  </section><section id="informatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
     <dl class="bibliography"><dt id="bib-blkamer">[BLKAMER]</dt><dd>
       <a href="https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef"><cite>Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening</cite></a>.  Harrie van Houtum (Business KnowHow Services) et al. URL: <a href="https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef">https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef</a>
     </dd><dt id="bib-hohfeld_1">[HOHFELD_1]</dt><dd>
@@ -606,8 +638,10 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+    <a href="#ref-for-dfn-rechtssubject-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsobject" aria-label="Links in this document to definition: Rechtsobject">
       <span class="caret"></span>
       <div>
@@ -616,8 +650,10 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+    <a href="#ref-for-dfn-rechtsobject-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsbetrekking" aria-label="Links in this document to definition: Rechtsbetrekking">
       <span class="caret"></span>
       <div>
@@ -626,8 +662,10 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+    <a href="#ref-for-dfn-rechtsbetrekking-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsfeit" aria-label="Links in this document to definition: Rechtsfeit">
       <span class="caret"></span>
       <div>
@@ -636,8 +674,10 @@ Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+    <a href="#ref-for-dfn-rechtsfeit-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorwaarde" aria-label="Links in this document to definition: Voorwaarde">
       <span class="caret"></span>
       <div>
