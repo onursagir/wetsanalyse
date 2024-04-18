@@ -41,8 +41,16 @@ let respecConfig = {
   }],
   authors: [
     {
-    name: "Mariette Lokin",
-    url: "https://hooghiemstra-en-partners.nl",
+      name: "Anouschka Ausems",
+      url: "https://belastingdienst.nl",
+    },
+    {
+      name: "John Bulles",
+      url: "https://pna-group.com/",
+    },
+    {
+      name: "Mariette Lokin",
+      url: "https://hooghiemstra-en-partners.nl",
     }
   ],
   github: "https://github.com/MinBZK/wetsanalyse/",
