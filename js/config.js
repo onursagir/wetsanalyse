@@ -29,20 +29,16 @@ let respecConfig = {
     company: "Hooghiemstra & Partners",
     companyURL: "https://hooghiemstra-en-partners.nl",
   }, {
-    name: "Frank Harmsen",
-    mailto: "frank.harmsen@pna-group.com",
-    company: "PNA",
-    companyURL: "http://www.pna-group.com",
+    name: "Steven Gort",
+    mailto: "steven.gort@ictu.nl",
+    company: "ICTU",
+    companyURL: "http://www.ictu.nl",
   }],
   authors:
     [
       {
         name: "Mariette Lokin",
         url: "https://hooghiemstra-en-partners.nl",
-      },
-      {
-        name: "Steven Gort",
-        url: "https://www.ictu.nl",
       }
     ],
   github: "https://github.com/MinBZK/wetsanalyse/",
