@@ -121,8 +121,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Tekst van de samenvatting komt hier zodra beschikbaar...
-En deze keer niet de feat: vergeten!">
+<meta name="description" content="Deze Wetsanalyse specificatie beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.">
 <style>
 
   .sidelabel {
@@ -297,21 +296,17 @@ En deze keer niet de feat: vergeten!">
       "url": "mailto:mariette@hooghiemstra-en-partners.nl"
     },
     {
-      "name": "Frank Harmsen",
-      "mailto": "frank.harmsen@pna-group.com",
-      "company": "PNA",
-      "companyURL": "http://www.pna-group.com",
-      "url": "mailto:frank.harmsen@pna-group.com"
+      "name": "Steven Gort",
+      "mailto": "steven.gort@ictu.nl",
+      "company": "ICTU",
+      "companyURL": "http://www.ictu.nl",
+      "url": "mailto:steven.gort@ictu.nl"
     }
   ],
   "authors": [
     {
       "name": "Mariette Lokin",
       "url": "https://hooghiemstra-en-partners.nl"
-    },
-    {
-      "name": "Steven Gort",
-      "url": "https://www.ictu.nl"
     }
   ],
   "github": "https://github.com/MinBZK/wetsanalyse/",
@@ -331,7 +326,7 @@ En deze keer niet de feat: vergeten!">
     <h2>
       MinBZK Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-04-11">11 april 2024</time>
+      <time class="dt-published" datetime="2024-04-11">18 april 2024</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -350,13 +345,11 @@ En deze keer niet de feat: vergeten!">
       <dd class="editor p-author h-card vcard">
     <a class="ed_mailto u-email email p-name" href="mailto:mariette@hooghiemstra-en-partners.nl">Mariette Lokin</a> (<a class="p-org org h-org" href="https://hooghiemstra-en-partners.nl">Hooghiemstra &amp; Partners</a>)
   </dd><dd class="editor p-author h-card vcard">
-    <a class="ed_mailto u-email email p-name" href="mailto:frank.harmsen@pna-group.com">Frank Harmsen</a> (<a class="p-org org h-org" href="http://www.pna-group.com">PNA</a>)
+    <a class="ed_mailto u-email email p-name" href="mailto:steven.gort@ictu.nl">Steven Gort</a> (<a class="p-org org h-org" href="http://www.ictu.nl">ICTU</a>)
   </dd>
       
-      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+      <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
     <a class="u-url url p-name fn" href="https://hooghiemstra-en-partners.nl">Mariette Lokin</a>
-  </dd><dd class="editor p-author h-card vcard">
-    <a class="u-url url p-name fn" href="https://www.ictu.nl">Steven Gort</a>
   </dd>
       <dt>Doe mee:</dt><dd>
     <a href="https://github.com/MinBZK/wetsanalyse/">GitHub MinBZK/wetsanalyse</a>
@@ -380,56 +373,30 @@ En deze keer niet de feat: vergeten!">
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Tekst van de samenvatting komt hier zodra beschikbaar...
-En deze keer niet de <code>feat:</code> vergeten!</p>
-</section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#wetsanalyse"><bdi class="secno">2. </bdi>Wetsanalyse</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#aanpak"><bdi class="secno">2.2 </bdi>Aanpak</a></li><li class="tocline"><a class="tocxref" href="#juridisch-analyschema"><bdi class="secno">2.3 </bdi>Juridisch Analyschema</a></li><li class="tocline"><a class="tocxref" href="#uitnodiging-om-bij-te-dragen"><bdi class="secno">2.4 </bdi>Uitnodiging om bij te dragen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">4. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2>
+<p>Deze <strong>Wetsanalyse specificatie</strong> beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: scope</span></div><p class="">
+Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het boek Wetsanalyse, Voor een werkbare uitvoering van wetgeving met ICT, van de auteur(s): Anouschka Ausems, John Bulles en Mariette Lokin.
+
+</p></div><p><a href="https://www.boomdenhaag.nl/webshop/wetsanalyse">Dit boek</a> wordt uitgeven door Boom uitgevers Den Haag.</p><p></p>
+<section id="status-van-dit-document"><div class="header-wrapper"><h3 id="status-van-dit-document-0">Status van dit document</h3><a class="self-link" href="#status-van-dit-document" aria-label="Permalink for this Section"></a></div>
+<p>Dit een conceptversie van dit document. Wijzigingen naar aanleiding van consultaties worden nog doorgevoerd.</p>
+</section></section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#status-van-dit-document">Status van dit document</a></li></ol></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#juridisch-analyschema"><bdi class="secno">2. </bdi>Juridisch Analyschema</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#uitnodiging-om-bij-te-dragen"><bdi class="secno">2.1 </bdi>Uitnodiging om bij te dragen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">4. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Bijvoorbeeld een introductie.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section><section id="wetsanalyse"><div class="header-wrapper"><h2 id="x2-wetsanalyse"><bdi class="secno">2. </bdi>Wetsanalyse</h2><a class="self-link" href="#wetsanalyse" aria-label="Permalink for Section 2."></a></div>
-<section id="introductie"><div class="header-wrapper"><h3 id="x2-1-introductie"><bdi class="secno">2.1 </bdi>Introductie</h3><a class="self-link" href="#introductie" aria-label="Permalink for Section 2.1"></a></div>
-<p>Wetgeving is een belangrijk instrument om de samenleving in goede banen te leiden; het is geen doel op zich maar een middel om maatschappelijke doelen te realiseren. Om wetgeving op een effectieve, rechtmatige en uitlegbare manier te kunnen uitvoeren, moet het nodige gebeuren. Dat geldt nog sterker als in de uitvoering ICT-toepassingen worden ingezet. Uitvoeringsorganisaties van de rijksoverheid zoals het Uitvoeringsinstituut Werknemersverzekeringen, de Dienst Uitvoering Onderwijs en de Belastingdienst hebben inmiddels omvangrijke ICT-landschappen om de steeds groter wordende stroom aan beslissingen die zij nemen over burgers en bedrijven af te handelen.</p>
-<p>
-      </p><figure id="fig-boek-wetsanalyse">
-        <img src="./media/boekwetsanalyse.png" alt="Boek Wetsanalyse">
-        <figcaption><a class="self-link" href="#fig-boek-wetsanalyse">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Boek Wetsanalyse</span></figcaption>
-      </figure>
-    <p></p>
-<p>Een goede vertaling van wetgeving naar de uitvoeringspraktijk vraagt om een aanpak waarbij alle stappen voor het interpreteren, preciseren en nader invullen van wetgeving expliciet en op een gestructureerde manier worden vastgelegd. Dat zorgt ervoor dat de keuzes die worden gemaakt bij het vertalen van wetgeving naar uitvoering helder zijn en dat besluiten die op grond van die keuzes worden gemaakt, uit te leggen en te verantwoorden zijn. Een ander voordeel van zo’n aanpak is dat bij wijziging van de wetgeving gemakkelijker te bepalen is welke aanpassingen nodig zijn in de ICT-systemen. Dat maakt uitvoeringsorganisaties wendbaarder bij de implementatie van wetgeving.</p>
-</section><section id="aanpak"><div class="header-wrapper"><h3 id="x2-2-aanpak"><bdi class="secno">2.2 </bdi>Aanpak</h3><a class="self-link" href="#aanpak" aria-label="Permalink for Section 2.2"></a></div>
-<p>Wetsanalyse is een aanpak die dit ondersteunt; de beschrijving en toepassing ervan staan in dit boek centraal. Het boek bestaat uit twee delen. Het eerste deel behandelt de theorie van Wetsanalyse. Om de context te schetsen wordt in hoofdstuk 2 ingegaan op de karakteristieken van wetgeving die maken dat (het inrichten van) de uitvoering vaak bewerkelijk is. Vervolgens worden in hoofdstuk 3 de verschillende stappen in de aanpak van Wetsanalyse beschreven:</p>
-<p>
-      </p><figure id="fig-stappen-wetsanalyse">
-        <img src="./media/stappenschema.png" alt="Stappen Wetsanalyse">
-        <figcaption><a class="self-link" href="#fig-stappen-wetsanalyse">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Stappen Wetsanalyse</span></figcaption>
-      </figure>
-    <p></p>
-<ol>
-<li><p><strong>Bepalen van het werkgebied</strong> het bepalen van de scope van de wetgeving en het uitvoeringsbeleid waarop Wetsanalyse toegepast wordt, bijvoorbeeld voor het bouwen van een ICT-systeem of een uitvoeringstoets op concept wetgeving.</p>
-</li>
-<li><p><strong>Zichtbaar maken van de structuur in wetgeving</strong> door het identificeren van de juridische ‘grammatica’ van wetgeving met behulp van een juridisch analyseschema.</p>
-</li>
-<li><p><strong>Vastleggen van de betekenis van wetgeving</strong> door het definiëren van de begrippen voor iedere formulering in de wetgeving met de daarbij behorende eigenschappen en te maken concrete voorbeelden die de betekenis van elk begrip verduidelijken en aanscherpen.</p>
-</li>
-<li><p><strong>Valideren van de analyseresultaten</strong> met behulp van concrete voorbeelden en juridische scenario’s worden de analyseresultaten uit de vorige stappen getoetst.</p>
-</li>
-<li><p><strong>Signaleren van ontbrekend uitvoeringsbeleid</strong> waar interpretaties en uitvoeringsaspecten naar voren komen die nog niet in uitvoeringsbeleid zijn vastgelegd, gaat een signaal naar de verantwoordelijken zodat dit alsnog gebeurt. Dit is essentieel voor de rechtmatigheid van elke beslissing of berekening. Alles moet terug te voeren zijn op wetgeving of officieel vastgesteld uitvoeringsbeleid.</p>
-</li>
-<li><p><strong>Opstellen van het kennismodel</strong> ondersteund door modelleervaardigheden wordt de betekenis van de wetgeving en het uitvoeringsbeleid overzichtelijk en samenhangend vastgelegd in een model, zodat deze kennis beschikbaar is voor implementatie in de uitvoeringspraktijk.</p>
-</li>
-</ol>
-</section><section id="juridisch-analyschema"><div class="header-wrapper"><h3 id="x2-3-juridisch-analyschema"><bdi class="secno">2.3 </bdi>Juridisch Analyschema</h3><a class="self-link" href="#juridisch-analyschema" aria-label="Permalink for Section 2.3"></a></div>
+</p></div></section><section id="juridisch-analyschema"><div class="header-wrapper"><h2 id="x2-juridisch-analyschema"><bdi class="secno">2. </bdi>Juridisch Analyschema</h2><a class="self-link" href="#juridisch-analyschema" aria-label="Permalink for Section 2."></a></div>
 <p>
       </p><figure id="fig-juridisch-analyseschema">
         <img src="./media/analyseschema.png" alt="Juridisch analyseschema">
-        <figcaption><a class="self-link" href="#fig-juridisch-analyseschema">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Juridisch Analyseschema</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-juridisch-analyseschema">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Juridisch Analyseschema</span></figcaption>
       </figure>
     <p></p>
 <p>Hoofdstuk 4 behandelt het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen. Hoofdstuk 5 gaat in op de multidisciplinaire samenwerking tussen juristen, informatieanalisten en ICT-ontwikkelaars die essentieel is voor een optimaal resultaat van Wetsanalyse. Zij voeren aan de hand van concrete voorbeelden en scenario’s steeds samen het gesprek over de uitkomsten van de analyse en de interpretatie die daarbij aan de wetgeving is gegeven. Dit is van groot belang voor de kwaliteit van de analyse en daarmee voor de juistheid van de uiteindelijke uitvoering van de wetgeving. In hoofdstuk 5 worden ook enkele aanbevelingen gedaan voor succesvolle toepassing en implementatie van Wetsanalyse.</p>
 <p>Het tweede deel van het boek bestaat uit twee grote casus waarin de praktische toepassing van Wetsanalyse wordt getoond. In hoofdstuk 6 wordt de inkomensafhankelijke bijdrage in artikel 43 Zorgverzekeringswet (Zvw) uitgewerkt. Deze bijdrage wordt geheven door de Belastingdienst. Voor hoofdstuk 7 is uitwerking van het wetsvoorstel Modernisering elektronisch bestuurlijk verkeer (afdeling 2.3 Awb) gekozen. Dit wetsvoorstel zorgt voor aanpassing van de regels voor digitale communicatie tussen burgers en overheid aan de eisen van de tijd. Deze verschillende casus laten zien dat Wetsanalyse op zowel algemene als domeinspecifieke wetgeving toepasbaar is, en zowel op bestaande wetgeving als op wetgeving in wording.</p>
 <p>Met dit boek wordt beoogd de aanpak voor Wetsanalyse breed bekend te maken voor iedereen die in werk of studie te maken heeft met toepassing of uitvoering van wetgeving. Hoewel de nadruk ligt op digitale uitvoering van wetgeving bij uitvoeringsorganisaties van de rijksoverheid, kan het ook van waarde zijn in het juridisch en informatiekundig onderwijs op hogescholen, universiteiten en postacademische opleidingen. Het doel is steeds een brug te slaan tussen de taal van juristen en de techniek van de ICT.</p>
-</section><section id="uitnodiging-om-bij-te-dragen"><div class="header-wrapper"><h3 id="x2-4-uitnodiging-om-bij-te-dragen"><bdi class="secno">2.4 </bdi>Uitnodiging om bij te dragen</h3><a class="self-link" href="#uitnodiging-om-bij-te-dragen" aria-label="Permalink for Section 2.4"></a></div>
+<section id="uitnodiging-om-bij-te-dragen"><div class="header-wrapper"><h3 id="x2-1-uitnodiging-om-bij-te-dragen"><bdi class="secno">2.1 </bdi>Uitnodiging om bij te dragen</h3><a class="self-link" href="#uitnodiging-om-bij-te-dragen" aria-label="Permalink for Section 2.1"></a></div>
 <p>Het boek beschrijft de aanpak en toepassing van Wetsanalyse naar de stand van begin 2021. Wetsanalyse zal echter zich blijven vernieuwen onder invloed van ontwikkelingen in wetgeving, rechtstoepassing en technologie. De lezers worden nadrukkelijk uitgenodigd om met Wetsanalyse aan de slag te gaan en ervaringen en ideeën te delen, om zo samen te werken aan het verfijnen en doorontwikkelen van Wetsanalyse. Net zoals samenwerking essentieel is in de concrete toepassing van Wetsanalyse: steeds multidisciplinair en stapsgewijs.</p>
 </section></section>
   <script>
@@ -448,11 +415,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
   <section id="conformance"><div class="header-wrapper"><h2 id="x3-conformiteit"><bdi class="secno">3. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 3."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"><div class="header-wrapper"><h2 id="x4-lijst-met-figuren"><bdi class="secno">4. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 4."></a></div><ul class="tof">
         <li class="tofline">
-    <a class="tocxref" href="#fig-boek-wetsanalyse"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Boek Wetsanalyse</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#fig-stappen-wetsanalyse"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Stappen Wetsanalyse</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#fig-juridisch-analyseschema"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">Juridisch Analyseschema</span></a>
+    <a class="tocxref" href="#fig-juridisch-analyseschema"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Juridisch Analyseschema</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
