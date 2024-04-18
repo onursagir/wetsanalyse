@@ -5,8 +5,8 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc0",
-  specStatus: "CV",
-  specType: "IM",
+  specStatus: "def",
+  specType: "im",
   pubDomain: "ronl",
 
   // shortName = Repository name
@@ -16,7 +16,7 @@ let respecConfig = {
   
   previousPublishVersion: "",
   previousPublishDate: "",
-  previousMaturity: "WV",
+  previousMaturity: "wv",
   title: "Wetsanalyse",
   subtitle: "voor een werkbare uitvoering van wetgeving met ICT",
 
