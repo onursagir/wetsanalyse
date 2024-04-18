@@ -1,7 +1,7 @@
 # JAS
 
 ## Juridisch Analyschema
-Het juridische analyseschema bevat de juridische elementen in wetgeving, met nog enige verfijningen daarin. Het werk van de Amerikaanse jurist Wesley Newcomb Hohfeld [[[HOHFELD]]] vormt een belangrijke basis voor het analyseschema. Hij beschreef al in het begin van de twintigste eeuw verschillende soorten rechten en plichten, op basis van Amerikaanse jurisprudentie.61 Vanaf 2012 heeft het samenwerkingsverband de Blauwe Kamer op basis van het werk van Hohfeld een referentiemodel voor wetgeving ontwikkeld.62 Dit referentiemodel is op zijn beurt weer de basis geweest voor het hier gespecificeerde juridische analyseschema.63
+Het juridische analyseschema bevat de juridische elementen in wetgeving, met nog enige verfijningen daarin. Het werk van de Amerikaanse jurist Wesley Newcomb Hohfeld [[?HOHFELD]] vormt een belangrijke basis voor het analyseschema. Hij beschreef al in het begin van de twintigste eeuw verschillende soorten rechten en plichten, op basis van Amerikaanse jurisprudentie.61 Vanaf 2012 heeft het samenwerkingsverband de Blauwe Kamer op basis van het werk van Hohfeld een referentiemodel voor wetgeving ontwikkeld.62 Dit referentiemodel is op zijn beurt weer de basis geweest voor het hier gespecificeerde juridische analyseschema.63
 
 
 ![Juridisch analyseschema](./media/analyseschema.png "Juridisch Analyseschema")
