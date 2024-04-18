@@ -5,7 +5,7 @@ Het juridische analyseschema bevat de juridische elementen in wetgeving, met nog
 
 ![Juridisch analyseschema](./media/analyseschema.png "Juridisch Analyseschema")
 
-In [[[!#fig-juridisch-analyseschema]]] zien we de verschillende klassen van het juridische analyse schema terugkomen als gekleurde blokjes. De gebruikte kleuren passen we toe in de voorbeelden van classificaties. Verder staan tussen de blokjes lijnen. Deze lijnen geven aan dat tussen twee blokjes een of meer relaties bestaan. We hebben vanuit het oogpunt van overzichtelijkheid niet alle lijnen weergegeven.
+In bovenstaande figuur zien we de verschillende klassen van het juridische analyse schema terugkomen als gekleurde blokjes. De gebruikte kleuren passen we toe in de voorbeelden van classificaties. Verder staan tussen de blokjes lijnen. Deze lijnen geven aan dat tussen twee blokjes een of meer relaties bestaan. We hebben vanuit het oogpunt van overzichtelijkheid niet alle lijnen weergegeven.
 
 ## Elementen uit het JAS
 
