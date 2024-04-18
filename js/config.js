@@ -48,12 +48,22 @@ let respecConfig = {
 
   // References & footnotes
   localBiblio: {
-    HOHFELD: {
+    HOHFELD_1: {
       title: "Some Fundamental Conceptions as Applied in Judicial Reasoning",
-      href: "https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf;jsessionid=1C20E5563034624CBFCA2C96A9D66D41?sequence=2",
+      href: "https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf?sequence=2",
       publisher: "Yale Law Journal (23) 1913, afl. 1, p. 16-59",
       },
-  },
+      HOHFELD_2: {
+        title: "Fundamental Legal Conceptions as Applied in Judicial Reasoning",
+        href: "https://openyls.law.yale.edu/bitstream/handle/20.500.13051/3864/Fundamental_Legal_Conceptions_as_Applied_in_Judicial_Reasoning.pdf?sequence=2",
+        publisher: "Yale Law Journal (26) 1917, afl. 8, p. 710-770.",
+      },
+      BLKAMER: {
+        title: "Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening",
+        href: "https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef",
+        publisher: "Harrie van Houtum (Business KnowHow Services) et al",
+      },
+    },
 
   // Create PDF and link to file in header (optional):
   alternateFormats: [
