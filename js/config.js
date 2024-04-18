@@ -50,6 +50,7 @@ let respecConfig = {
   localBiblio: {
     HOHFELD: {
       title: "Some Fundamental Conceptions as Applied in Judicial Reasoning",
+      href: "https://www.jstor.org/stable/785533",
       publisher: "Yale Law Journal (23) 1913, afl. 1, p. 16-59",
       },
   },
