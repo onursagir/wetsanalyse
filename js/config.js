@@ -22,8 +22,9 @@ let respecConfig = {
 
   // Content
   content: {
-    "Inleiding": "informative",
-    "JAS": ""
+    "H1-Inleiding": "informative",
+    "H2-JAS": "",
+    "H3-Kader": ""
   },
   editors: [
     {
@@ -62,6 +63,14 @@ let respecConfig = {
         title: "Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening",
         href: "https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef",
         publisher: "Harrie van Houtum (Business KnowHow Services) et al",
+      },
+      NLSBB: {
+        href: "https://docs.geostandaarden.nl/nl-sbb/nl-sbb/",
+        title: "NL-SBB - Standaard voor het beschrijven van begrippen",
+        authors: [
+          "Geonovum Standaard - versie ter vaststelling.",
+        ],
+        date: "16 april 2024",
       },
     },
 
