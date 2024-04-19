@@ -10,7 +10,27 @@ De topbegrippen zijn dan:
 * [=rechtsobject=]
 * [=rechtsbetrekking=]
 * [=rechtsfeit=]
+* [=voorwaarde=]
+* [=afleidingsregel=]
 
 Dezen kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit:
+* [=rechtssubject=]
+* [=rechtsobject=]
+* [=rechtsbetrekking=]
+  * [=delegatiebevoegdheid=]
+  * [=delegatie-invulling=]
+* [=rechtsfeit=]
+* [=voorwaarde=]
+  * [=operator=]
+* [=afleidingsregel=]
+  * [=variabele=]
+    * [=variabelewaarde=]
+    * [=tijdsaanduiding=]
+    * [=plaatsaanduiding=]
+  * [=parameter=]
+      * [=parameterwaarde=]
 
-To do.
+
+
+
+
