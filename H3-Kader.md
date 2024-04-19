@@ -30,7 +30,3 @@ Dezen kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit
   * [=parameter=]
       * [=parameterwaarde=]
 
-
-
-
-
