@@ -10,5 +10,6 @@ jobs:
       - uses: onursagir/regels.overheid.nl/.github/actions/publish-respec-document-release@main
         with:
           token: ${{ secrets.REGELS_PUBLICATION_TOKEN }}
-          owner: 'MinBZK'
-          repo: 'Wetsanalyse'
+          owner: "MinBZK"
+          repo: "Wetsanalyse"
+          #
